@@ -256,55 +256,55 @@ void display()
 
 
 
-// void preorder(int u)
-// {
-//    // cout<<visited[2];
+void preorder(int u)
+{
+   // cout<<visited[2];
    
-//   // visited[u]=true;
-//     cout<<u<<"->";
-//     for(int i=0;i<graph[u].size();i++)
-//     {
-//         if(!visited[graph[u][i]->v])
-//         {
-//           visited[graph[u][i]->v]=true;
-//           preorder(graph[u][i]->v);
-//         }
-//     }
-// }
+  // visited[u]=true;
+    cout<<u<<"->";
+    for(int i=0;i<graph[u].size();i++)
+    {
+        if(!visited[graph[u][i]->v])
+        {
+          visited[graph[u][i]->v]=true;
+          preorder(graph[u][i]->v);
+        }
+    }
+}
    
-// }
-// void bfs(int src)
-// {
-//     vector<bool> vis(10, false);
-//     q.push(src);
-//     while(!q.empty())
-//     {
-//         int front=q.front();
-//         q.pop();
-//         if(!vis[front])
-//         {
-//             cout<<front<<" ->";
-//         }
-//         vis[front]=true;
+}
+void bfs(int src)
+{
+    vector<bool> vis(10, false);
+    q.push(src);
+    while(!q.empty())
+    {
+        int front=q.front();
+        q.pop();
+        if(!vis[front])
+        {
+            cout<<front<<" ->";
+        }
+        vis[front]=true;
 
-//         for(int i=0;i<graph[front].size();i++)
-//         {
-//             if(!vis[graph[front][i]->v])
-//           q.push(graph[front][i]->v);
-//         }
+        for(int i=0;i<graph[front].size();i++)
+        {
+            if(!vis[graph[front][i]->v])
+          q.push(graph[front][i]->v);
+        }
 
-//     }
-// }
+    }
+}
 int main()
 {
     solve();
     vector<bool> vis(7, false);
     //light(0,5,0,vis,"");
-    // cout<<fans<<endl;
-    // cout<<ltwt<<endl;
-   // heavy(0,5,0,vis,"");
-    //cout<<fans_h<<endl;
-    //cout<<ltwt_h<<endl;
+    cout<<fans<<endl;
+    cout<<ltwt<<endl;
+   heavy(0,5,0,vis,"");
+    cout<<fans_h<<endl;
+    cout<<ltwt_h<<endl;
    // bfs(0);
    dijkstra(0);
    
