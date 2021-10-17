@@ -1,3 +1,3 @@
 # algos
 
-These are important algos
+These are important algos in ds
