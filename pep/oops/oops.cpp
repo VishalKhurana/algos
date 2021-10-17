@@ -42,7 +42,7 @@ void disp()
     cout<<a<<endl;
 }
 protected:
-// int a=500;
+ int a=500;
 };
 
 int main()
