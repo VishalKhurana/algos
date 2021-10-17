@@ -112,6 +112,7 @@ class dpair
    
 }
 };
+// dijkstra algorithm
 void dijkstra(int src)
 {
     vector<bool>visited(graph.size(),false);
@@ -237,7 +238,7 @@ void heavy(int src,int des,int wt,vector<bool>&vis,string ans)
 }
 
 
-
+// display methods are for edgelist1 and edgelist2 respectively.
 void display()
 {
     for(int i=0;i<graph.size();i++)
