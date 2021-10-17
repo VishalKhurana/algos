@@ -7,6 +7,7 @@ int min(int a, int b)
 {
     return a < b ? a : b;
 }
+// get the max...please use return type according to constraints
 int max(int a, int b)
 {
     return a > b ? a : b;
